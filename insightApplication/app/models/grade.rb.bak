@@ -1,0 +1,5 @@
+class Grade < ActiveRecord::Base
+  attr_accessible :devration, :name
+has_many:Batches
+has_many:Trainer:,:through=>:Batches
+end
